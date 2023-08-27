@@ -4,6 +4,8 @@ from tensorflow.keras.applications import ResNet50
 from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 from PIL import Image
 
+st.cache.clear()
+
 model = ResNet50(weights='imagenet')
 
 st.title('Bilderkennung mit ResNet')
